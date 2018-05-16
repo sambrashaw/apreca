@@ -60,6 +60,10 @@ Or to make the text bold, we could use
 
 ```<b>Hello, World!</b>```
 
+## Changelog
+
+```v1.0``` - Huh, I created something, and it works, so I guess you could class this as version one.
+
 ## Usage rights
 
 Apreca is open source, meaning you can use the code, change it, mould it into something better, basically do anything you want with it.
