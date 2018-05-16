@@ -49,3 +49,10 @@ HTTP/1.1 200 OK
 Hello, World!
 ```
 it would output ```Hello, World!``` in the client browser.
+
+Expanding on this, just like any other website, you can use HTML tags to style and format the document.
+
+For example, to put the text in a paragraph that will have it's font family as Helvetica, we could use ```<p style="font-family: Helvetica;">Hello, World!</p>```
+
+Or to make the text bold, we could use ```html
+<b>Hello, World!</b>```
