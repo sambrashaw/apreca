@@ -72,4 +72,4 @@ Made something amazing? Show me at aaronduce@lymelite.co.uk
 
 ## Suggestions
 
-If you have any suggestions on how I can improve Apreca to make it better, let me know at aaronduce@lymelite.co.uk
+If you have any suggestions on how I can improve Apreca to make it better, create an issue on the repo.
