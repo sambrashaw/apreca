@@ -59,3 +59,13 @@ For example, to put the text in a paragraph that will have it's font family as H
 Or to make the text bold, we could use
 
 ```<b>Hello, World!</b>```
+
+## Usage rights
+
+Apreca is open source, meaning you can use the code, change it, mould it into something better, basically do anything you want with it.
+
+Made something amazing? Show me at aaronduce@lymelite.co.uk
+
+## Suggestions
+
+If you have any suggestions on how I can improve Apreca to make it better, let me know at aaronduce@lymelite.co.uk
