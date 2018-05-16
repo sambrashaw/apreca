@@ -35,3 +35,17 @@ while True:
     client_connection.sendall(http_response)
     client_connection.close()
 ```
+
+## How to use your information or HTML code
+
+Apreca relies on grabbing the information it presents on the webpage from a text file called ```WebpageContents.txt```, of which you can get a sample copy of from the sample folder in the repo.
+
+The contents of this file can be as simple as just plain text, just like it can be in HTML, but the file must always start with a ```HTTP/1.1 200 OK```.
+
+If the file was to contain:
+```
+HTTP/1.1 200 OK
+
+Hello, World!
+```
+it would output ```Hello, World!``` in the client browser.
