@@ -2,6 +2,8 @@
 
 Apreca - (app • ree • sha)
 
+_731 bytes of open source goodness_
+
 Apreca is a basic open-source python3-based web server. It grabs information from a text file of the website contents and broadcasts it using HTTP protocols over a port of your choice.
 
 ## The code
