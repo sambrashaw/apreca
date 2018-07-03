@@ -76,7 +76,7 @@ Made something amazing? Show me at aaronduce@lymelite.co.uk
 
 ## Credits
 
-Well Sam fixed the port entry limit on the new GUI, thanks - [GitHub](github.com/sambrashaw) - [Twitter](twitter.com/trsambrashaw)
+Well Sam fixed the port entry limit on the new GUI, thanks - [GitHub](https://github.com/sambrashaw) - [Twitter](https://twitter.com/trsambrashaw)
 
 ## Suggestions
 
