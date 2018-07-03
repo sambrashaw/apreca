@@ -67,6 +67,7 @@ Or to make the text bold, we could use
 ## Changelog
 
 ```v1.0``` - Huh, I created something, and it works, so I guess you could class this as version one.
+
 ```b2.0-1``` - A beta? of the new version 2? that doesnt work? yeah, you could say that.
 
 ## Usage rights
