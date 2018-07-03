@@ -74,6 +74,10 @@ Apreca is open source, meaning you can use the code, change it, mould it into so
 
 Made something amazing? Show me at aaronduce@lymelite.co.uk
 
+## Credits
+
+Well Sam fixed the port entry limit on the new GUI, thanks - [GitHub](github.com/sambrashaw) - [Twitter](twitter.com/trsambrashaw)
+
 ## Suggestions
 
 If you have any suggestions on how I can improve Apreca to make it better, create an issue on the repo.
