@@ -76,6 +76,8 @@ Or to make the text bold, we could use
 
 ```b2.0-2``` - It 'technically' works now, so theres that, but then again none of the actual functionality is there yet.
 
+```b2.0-3``` - Functionality is trickling back in, and as usual fixing stuff that shouldnt need to be fixed but have to.
+
 ## Usage rights
 
 Apreca is open source, meaning you can use the code, change it, mould it into something better, basically do anything you want with it.
