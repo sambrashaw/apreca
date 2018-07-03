@@ -5,7 +5,6 @@
 # Additions by Sam Brashaw 2018
 # github.com/sambrashaw
 from socket import socket
-
 from tkinter import *
 import socket
 from datetime import datetime
@@ -19,6 +18,9 @@ logname = "apreca-log.txt"
 enteredport = StringVar()
 enteredhostfile = StringVar()
 status = StringVar()
+logtemp = open(logname, "w")
+logtemp.write("[" + str(datetime.now()) + "] Started logging.")
+logtemp.close()
 
 # socket definition and setup
 comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,8 +31,8 @@ def limit(*args):
         enteredport.set(value[0:5])
 
 def appendLog(tolog):
-    log = open(logname, 'w')
-    log.append("\n [" + str(datetime.now()) + "]" + tolog)
+    log = open(logname, 'a')
+    log.write("\n[" + str(datetime.now()) + "] " + tolog)
     log.close()
 
 def setstatus(text, code):
@@ -48,7 +50,7 @@ def hoststart():
     host, port = enteredhostfile.get(), enteredport.get()
     if host == "" or port == 0 or host is None:
         setstatus("Host or Port not defined.\nAppended to log: apreca-log.txt", 2)
-        appendLog("Host or Port not defined. Appended to log: apreca-log.txt")
+        appendLog("Host or Port not defined.")
     else:
         comm_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         comm_socket.bind((host, int(port)))
