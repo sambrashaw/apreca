@@ -4,45 +4,56 @@
 # github.com/aaronduce
 # Additions by Sam Brashaw 2018
 # github.com/sambrashaw
+from socket import socket
 
 from tkinter import *
 import socket
+from datetime import datetime
 
 # general tkinter gui setup
+
 hostStartMenuWindow = Tk()
 hostStartMenuWindow.geometry("250x400")
 hostStartMenuWindow.configure(background='#383838')
+logname = "apreca-log.txt"
+enteredport = StringVar()
+enteredhostfile = StringVar()
+status = StringVar()
 
 # socket definition and setup
 comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-HOST, PORT = "", 0
 
 def limit(*args):
     value = enteredport.get()
     if len(value) > 5:
         enteredport.set(value[0:5])
 
-def setstatus(code):
-    statuscode = code
+def appendLog(tolog):
+    log = open(logname, 'w')
+    log.append("\n [" + str(datetime.now()) + "]" + tolog)
+    log.close()
+
+def setstatus(text, code):
     if code == 0:
-        hostStartMenuWindowStatusLabel.configure(fg="#0F0") # Green
+        hostStartMenuWindowStatusLabel.configure(foreground="#0F0") # Green
     elif code == 1:
-        hostStartMenuWindowStatusLabel.configure(fg="#FFA500") # Orange
+        hostStartMenuWindowStatusLabel.configure(foreground="#FFA500") # Orange
     elif code == 2:
-        hostStartMenuWindowStatusLabel.configure(fg="#F00") # Red
+        hostStartMenuWindowStatusLabel.configure(foreground="#F00") # Red
     else:
-        hostStartMenuWindowStatusLabel.configure(fg="#FFF") # White
+        hostStartMenuWindowStatusLabel.configure(foreground="#FFF") # White
+    status.set(text)
 
 def hoststart():
-    if HOST == "" or PORT == 0:
-        raise Exception("Host or Port not defined.")
-        exit(0)
-
-enteredport = StringVar()
-enteredhostfile = StringVar()
-status = StringVar()
-statuscode = 0
+    host, port = enteredhostfile.get(), enteredport.get()
+    if host == "" or port == 0 or host is None:
+        setstatus("Host or Port not defined.\nAppended to log: apreca-log.txt", 2)
+        appendLog("Host or Port not defined. Appended to log: apreca-log.txt")
+    else:
+        comm_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        comm_socket.bind((host, int(port)))
+        comm_socket.listen(1)
+        setstatus("Running.", 0)
 
 enteredport.trace("w", limit)  # when the variable changes run limit()
 
@@ -78,4 +89,4 @@ hostStartMenuWindowFileEntry.pack()
 hostStartMenuWindowStartButton.pack()
 hostStartMenuWindowStatusLabel.pack()
 
-hostStartMenuWindow.mainloop()  # EOP
+hostStartMenuWindow.mainloop() # EOP
