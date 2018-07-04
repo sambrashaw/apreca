@@ -13,7 +13,7 @@ Apreca is a basic open-source python3-based web server. It grabs information fro
 
 Apreca relies on grabbing the information it presents on the webpage from a text file called ```WebpageContents.txt```, of which you can get a sample copy of from the sample folder in the repo.
 
-The contents of this file can be as simple as just plain text, just like it can be in HTML, but the file must always start with a ```HTTP/1.1 200 OK```. - **Ammendment - This is not the case anymore. The code does this for you so don't worry :).**
+The contents of this file can be as simple as just plain text, just like it can be in HTML, ~~but the file must always start with a ```HTTP/1.1 200 OK```.~~
 
 If the file was to contain:
 ```
@@ -31,7 +31,7 @@ Or to make the text bold, we could use
 
 ```<b>Hello, World!</b>```
 
-## Changelog
+## Last Version Changelog
 
    - Fixed the status system
    - Added the logging system. Will be made better in the future.
@@ -75,4 +75,4 @@ Also done most if not all of the programming in this fork.
 
 If you have any suggestions on how I can improve Apreca to make it better, create an issue on the repo.
 
-Buzz me at [@TRSamBrashaw](https://twitter.com/sambrashaw) if you have any questions.
+Buzz me at [@TRSamBrashaw](https://twitter.com/sambrashaw) on Twitter if you have any questions.
