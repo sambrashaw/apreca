@@ -59,8 +59,8 @@ Or to make the text bold, we could use
 |**b2.0-3**|Functionality is trickling back in, and as usual fixing stuff that shouldnt need to be fixed but have to.|
 
 ## TODO
-[] Finish the hosting functionality
-[] Refine usability
+- [ ] Finish the hosting functionality
+- [ ] Refine usability
 
 ## Usage rights
 
