@@ -1,7 +1,7 @@
 # Apreca - Sam Brashaw Fork
 [Original Project](https://github.com/aaronduce/apreca)
 
-<img src="https://img.shields.io/badge/release--version-v1.0-green.svg"/> <img src="https://img.shields.io/badge/beta--version-b2.0--3-gold.svg"/>
+<img src="https://img.shields.io/badge/release--version-v1.0-green.svg"/> <img src="https://img.shields.io/badge/beta--version-b2.0--3-yellow.svg"/>
 
 Apreca - (app • ree • sha)
 
