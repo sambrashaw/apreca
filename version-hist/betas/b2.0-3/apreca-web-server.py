@@ -66,13 +66,3 @@ def setupSocket():
         setupSocket()
 
 setupSocket()
-
-##while True:
-##    client_connection, client_address = listen_socket.accept()
-##    request = client_connection.recv(1024)
-##    print request
-##
-##    file = open("WebpageContents.txt", "r")
-##    http_response = file.read()
-##    client_connection.sendall(http_response)
-##    client_connection.close()
